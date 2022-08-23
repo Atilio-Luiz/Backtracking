@@ -31,7 +31,7 @@ int main()
 {
     Graph G;
     create_graph_from_file(G, "edges.txt"); 
-    int maximum_label { maximum_degree(G) + 1 };
+    int maximum_label { 2 * maximum_degree(G) + 1 };
     while(true) {
         if(generate_labeling(G, maximum_label)) {
             return 0;
